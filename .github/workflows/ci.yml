@@ -9,14 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches:
-      - master
-      - releases/*
-
-  pull_request:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   ubuntu:
